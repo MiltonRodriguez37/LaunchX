@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería</title>
+    <link rel="icon" href="./logo.png">
+
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 10px;
+            text-align: center;
+        }
+        body{
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pastelería La Tapatía</h1>
+    </header>
+    <img src="./logo.png" height="250" width="250" alt="Logo Pastelería La Tapatía"/>
+    <section>
+        <h2>Pasteles</h2>
+        <hr>
+        <section>
+            <h3>Sabores</h3>
+                <ul>
+                    <b><li>Fresa .............. $210</li></b><br>
+                    <img src="./strawberrycake.jpg" alt="Pastel de fresa"/>
+                    <b><li>Chocolate .......... $200</li></b><br>
+                    <img src="./chocolatecake.jpeg" alt="Pastel de chocolate"/>
+                    <b><li>Frutas ............. $220</li></b><br>
+                    <img src="./fruitcake.jpeg" alt="Pastel de frutas"/>
+                    <b><li>Red Velvet ......... $250</li></b><br>
+                    <img src="./redvelvetcake.jpg" alt="Pastel de Red Velvet"/>
+                </ul>
+        </section>
+            <hr>
+
+        <section>
+            <h3>Adornos</h3>
+            <ul>
+                <b><li>Flores ................. $25</li></b><br>
+                <img src="./flores.jpg" alt="Flores decorativas"/>
+                <b><li>Fondant ................ $35</li></b><br>
+                <img src="./fondant.jpg" alt="Fondant decorativo"/>
+                <b><li>Merengue ............... $25</li></b><br>
+                <img src="./merengue.jpg" alt="Merengue"/>
+                <b><li>Chispas de colores ..... $20</li></b><br>
+                <img src="./chispasdecolores.jpg" alt="Chispas de colores"/><br>
+            </ul>
+        </section>
+        
+        <hr>
+
+        <section>
+            <h3>Sucursales</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Horarios de atención</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td> <a href="https://goo.gl/maps/ynasuUzKspTewxsu8">Sta. Margarita 3162, Sta Margarita, 45130 Zapopan, Jal.</a></td>
+                    <td>+52 3348596895</td>
+                    <td>M-D de 8 am - 9 pm</td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://goo.gl/maps/wKaeubzzgwhL6o6X7">Av. Arco del Triunfo 570, Arcos de Zapopan, 45130 Zapopan, Jal.</a></td>
+                    <td>+52 3334353637</td>
+                    <td>M-D de 8 am - 9 pm</td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://goo.gl/maps/CMBek9F8RJGTcEf1A">Av. De Las Palmeras 1037, La Tuzania, 45130 Zapopan, Jal.</a></td>
+                    <td>+52 3344556677</td>
+                    <td>M-D de 8 am - 9 pm</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+        
+    </section>
+
+    <section>
+        <form action="/accion.js" id="form1" method="post">
+            <h2>¡Pide tu pastel!</h2>
+                <label for="nombre">Nombre del cliente: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez">
+                <br><br>
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" id="telefono" name="telefono" placeholder="3334353637">
+                <br><br>
+                <label for="correo">Correo electrónico: </label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@hotmail.com">
+                <br><br>
+                <label for="descripcion">Descripción del pastel: </label>
+                <input type="text" id="descripcion" style="width: 350px; height: 30px;"  size="32" name="descripcion" placeholder="Coloca aquí una descripción general de tu pastel deseado">
+                <br><br>
+
+                <hr>
+
+                <h3>¡Escoge el sabor o los sabores que deseas en tu pastel!</h3>
+                <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+                <label for="topping1">Chocolate</label><br>
+                <input type="checkbox" id="fresa" name="fresa" value="fresa">
+                <label for="fresa">Fresa</label><br>
+                <input type="checkbox" id="frutas" name="frutas" value="Frutas">
+                <label for="frutas">Frutas</label><br>
+                <input type="checkbox" id="redvelvet" name="redvelvet" value="redvelvet">
+                <label for="redvelvet">Red Velvet</label><br>
+                
+                <hr>
+
+                <h3>¡Escoge el adorno o los adornos que deseas en tu pastel!</h3>
+                <input type="checkbox" id="flores" name="flores" value="flores">
+                <label for="topping1">Flores</label><br>
+                <input type="checkbox" id="fondant" name="fondant" value="fondant">
+                <label for="fondant">Fondant</label><br>
+                <input type="checkbox" id="merengue" name="merengue" value="merengue">
+                <label for="merengue">Merengue</label><br>
+                <input type="checkbox" id="chispas" name="chispas" value="chispas">
+                <label for="chispas">Chispas de Colores</label><br>
+                <br>
+                <input type="submit" id="boton pedido" name="boton pedido" value="Realizar pedido" onclick="alert('Pedido realizado');"><br><br>
+                <br>
+        </form>
+    </section>
+
+
+
+
+</body>
+</html>
